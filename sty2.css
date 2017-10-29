@@ -1,0 +1,123 @@
+a {color: inherit; text-decoration: underline; text-decoration-skip: objects; text-decoration-color: silver;}
+.group {white-space: nowrap; display: inline-block;}
+.low-accent{color:gray;}
+.img-actual{opacity: 1; box-shadow: 0 0 0 5px white, 0 0 0 12px silver;}
+.img-square{width: 165px;height: 165px;margin-left: 45px;}
+
+section.topics {
+    flex-basis: 60%;
+    text-align: right;
+}
+
+section.vue {
+    flex-basis: 250px;
+    display: flex;
+    flex-shrink: 0;
+}
+@media (max-width: 1024px) {
+    section.vue img { display: none; }
+    section.vue { flex-basis: 50px; }
+}
+
+section.bindings {
+    flex-basis: 25%;
+}
+
+section.bindings .group {line-height: 1.5em;}
+
+h1{color:black; margin-bottom: 0.6em;}
+
+h2{font-size: 20pt; color:dimgray; margin-right: -.2em;/* trailing dots */}
+
+h1, .time {
+    margin-top: 0.4em;
+    font-size: 52px;
+}
+
+h3 {
+    font-size: 21px;
+    color: darkgray;
+    margin-top: 0;
+}
+
+img {
+    opacity: 0.6;
+    width: 135px;
+    margin: auto;
+    display: block;
+}
+
+main article {
+    display: flex;
+    width: 100%;
+}
+.cv-box {
+    display: inline-flex;
+    width: auto;
+    position: fixed;
+    justify-content: flex-start;
+    top: 1em;
+}
+@media (max-width: 1300px) {
+    .cv-box { position: static; }
+}
+
+main article + article {
+    margin-top: 4em;
+}
+
+.time {
+    display: inline-block;
+    font-size: 30pt;
+    line-height: 60px;
+    font-family: 'Helvetica Neue';
+}
+
+.term { white-space: nowrap; }
+
+section.profiles {
+    font-weight: 500;
+    font-size: 21px;
+    font-family: 'Helvetica Neue';
+    opacity: .6;
+}
+
+section.profiles a {
+    text-decoration: none;
+    display: inline-block;
+    width: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    vertical-align: text-top;
+    letter-spacing: -1px;
+    border-radius: 8px;
+    text-indent: -1px;
+}
+
+img.icon {
+    width: 1.5em;
+    margin: 0;
+    opacity: 1;
+    display: inline-block;
+}
+
+a.fb {
+    background: #3b5998;
+}
+
+a.gh {
+    background: black;
+}
+
+a.li {
+    background: #2672ae;
+}
+
+a.tg {
+    background: #0088cc;
+}
+
+a.tw {
+    background: #1da1f2;
+}
