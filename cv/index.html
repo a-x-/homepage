@@ -5,58 +5,102 @@
 
 <style>
 @font-face {
-    font-family: 'Yandex Sans Text Web';
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
+  font-family: 'Yandex Sans Text Web';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
 
-    src: url(https://yastatic.net/islands/_/GituScM_-4N6G_NbkNFGl3QuY1k.woff2) format('woff2'),
-    url(https://yastatic.net/islands/_/pTlXL9UR9mDEGvGf8tMPbjLky1A.woff) format('woff');
+  src: url(https://yastatic.net/islands/_/GituScM_-4N6G_NbkNFGl3QuY1k.woff2) format('woff2'),
+  url(https://yastatic.net/islands/_/pTlXL9UR9mDEGvGf8tMPbjLky1A.woff) format('woff');
 }
 
 .i-font_face_yandex-sans-text-medium {
-    font-family: 'Yandex Sans Text Web', sans-serif;
-    font-weight: 500;
+  font-family: 'Yandex Sans Text Web', sans-serif;
+  font-weight: 500;
 }
 
 html {
-    text-align: center;
-    font-family: 'Yandex Sans Text Web', 'Helvetica neue', Helvetica, Tahoma, sans-serif;
-    line-height: 1.5;
+  font-family: 'Yandex Sans Text Web', 'Helvetica neue', Helvetica, Tahoma, sans-serif;
+  line-height: 1.5;
+  padding: 0 1em;
+  font-size: 16px;
 }
 
 body {
-    display: inline-block;
-    text-align: left;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.brief {
+  white-space: nowrap;
+}
+.photo {
+  width: 6em;
+  margin-right:.8em;
+  float: left;
 }
 
 h1 {
-    font-variant: small-caps;
-    margin-top: 1em;
-    margin-bottom: 0;
+  font-variant: small-caps;
+  margin-top: .5em;
+  margin-bottom: 0;
 }
 
 h2 {
-    font-size: 1em;
-    margin-top: .5em;
-    margin-bottom: 0;
+  font-size: 1em;
+  margin-top: .5em;
+  margin-bottom: 0;
 }
 
 ul {
-    margin-top: 0;
-    padding: 0;
+  margin-top: 0;
+  padding: 0;
+  list-style-type: circle;
 }
 
 h1:first-child {
-    clear: both;
+  clear: both;
+}
+
+
+dt {
+  margin-right: 0.7em;
+  opacity: .8;
+  float: left;
+}
+dt:after {
+  content: ':';
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    margin-top: 1em;
+  }
+  h1, .photo {
+    margin-top: 0;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-100%) translate(-1em);
+  }
+}
+@media (min-width: 1680px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media print {
+  .no-print {
+    display: none;
+  }
 }
 </style>
 
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43808884 = new Ya.Metrika({ id:43808884, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43808884" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
-<p>
-  <img src="me.jpg" align="left" style="width: 100px; margin-right:.8em">
+<p class="brief">
+  <img class="photo" alt="my face" src="me.jpg"/>
   <strong>Frontend developer</strong><br/>
   <a href="https://linkedin.com/in/frontdev">linkedin.com/in/frontdev</a> 4 years of experience<br/>
   <b>RocketBank</b>: Team&nbsp;Leading, UX, DevOps, Backend, PM
@@ -64,99 +108,151 @@ h1:first-child {
   <b>Yandex</b>: membership: Images, UI&nbsp;Library, Search
 </p>
 
-<h1>skils</h1>
+<h1 class="no-print">Skils</h1>
 
-<ul>
-<li>js, es6+, node, <a href="https://en.wikipedia.org/wiki/Functional_programming">fp</a>, css/css-next/postcss, html/5, browsers' api</li>
-<li>frameworks: react/redux ⭐</li>
-<li>configuration: webpack/babel ⭐, eslint, teamcity [ci], travic-ci</li>
-<li>tools: git ⭐, <a href="https://github.com/a-x-">github</a>, unix cli ⭐, macos</li>
-<li>http, rest api, regexp, <a href="https://en.wikipedia.org/wiki/A/B_testing">a/b</a>, <a href="https://en.wikipedia.org/wiki/i18n">l10n/i18n</a>, acorn [ast parsing]</li>
-<li>project management</li>
-<li>backend: node/express/mongodb, ruby/ror</li>
-<li>devops: docker</li>
-</ul>
+<section class="section">
 
-<h1>recent projects</h1>
+<strong>
+  js/es6+,
+  node,
+  <a href="https://en.wikipedia.org/wiki/Functional_programming">fp</a>,
+  css/css-next/postcss,
+  html/5,
+  browsers' api
+</strong>
 
-<h2>Rocketbank</h2>
-<ul>
-<li>Rocketbank ui of key business-processes: redesign look&amp;feel, speed up</li>
-<li>React <a href="https://github.com/callemall/material-ui">material-ui</a> based UI-library project</li>
-<li>Innovative Redux-based architecture</li>
-<li>Start up new web-services</li>
-<li>Fast modern ui/ux-intensive wide browsers compatible 3d-sec page</li>
-</ul>
+<dl>
+  <dt>frameworks</dt> <dd><strong>react/redux ☆</strong></dd>
+  <dt>configuration</dt> <dd>webpack/babel ☆, eslint, teamcity [ci], travic-ci</dd>
+  <dt>tools</dt> <dd>git ☆, <a href="https://github.com/a-x-">github</a>, unix cli ☆, macos</dd>
+  <dt>cool things</dt> <dd>http, rest api, regexp, <a href="https://en.wikipedia.org/wiki/A/B_testing">a/b</a>, <a href="https://en.wikipedia.org/wiki/i18n">l10n/i18</a>, ast parsing</dd>
+  <dt>backend</dt> <dd>node/express/mongodb, ruby/ror</dd>
+  <dt>devops</dt> <dd>docker, ansible, kubernetes</dd>
+  <dt>soft skills</dt> <dd>project management, team leading</dd>
+</dl>
 
-<h2>Recent open-source projects</h2>
+</section>
 
-<ul>
-<li>co-maintaining the <a href="https://github.com/danethurber/webpack-manifest-plugin">webpack-manifest-plugin</a></li>
-<li><a href="https://www.npmjs.com/package/collection-deep-merge">collection-deep-merge</a> — true redux arrays merger</li>
-<li><a href="https://www.npmjs.com/package/react-easy-print">react-easy-print</a> — advanced <kbd>ctr-p</kbd> on react</li>
-<li><a href="https://www.npmjs.com/package/create-npm-pkg">create-npm-pkg</a> — perform all initial npm-package work</li>
-<li><a href="https://www.npmjs.com/package/numsep">numsep</a> — ux-perfect number formatter</li>
-</ul>
+<h1>Projects</h1>
 
-<h2>Yandex search frontend <a href="https://en.wikipedia.org/wiki/Search_engine_results_page">(SERP)</a></h2>
+<section class="section">
 
-<ul>
-<li>New big system X implementation <b>membership</b></li>
-<li>Upgrading library major version <b>membership</b></li>
-<li>Freeze IE9 code maintenance <b>initiative</b></li>
-<li>Code structure big refactoring <b>project</b></li>
-</ul>
+  <section>
 
-<h2>Yandex common components library — UI kit — bem, react</h2>
+    <h2>Rocketbank</h2>
 
-<ul>
-<li>React components <b>implementation</b></li>
-<li>Selective CI tests <b>infrastructure project</b></li>
-<li>Port a few huge components between libraries <b>project</b></li>
-<li>Header portal navigation redesign <b>implementation</b></li>
-<li>Upgrading library major version <b>project</b></li>
-</ul>
+    <ul>
+      <li>Rocketbank ui of key business-processes: redesign look&amp;feel, speed up</li>
+      <li>React <a href="https://github.com/callemall/material-ui">material-ui</a> based UI-library project</li>
+      <li>Innovative Redux-based architecture</li>
+      <li>Start up new web-services</li>
+      <li>Fast modern ui/ux-intensive wide browsers compatible 3d-sec page</li>
+    </ul>
 
-<h2>Yandex Images (<a href="https://yandex.ru/images">yandex.ru/images</a>)</h2>
+  </section>
 
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Canvas</a>-based images down-scaler (mobile first) <b>implementation</b></li>
-<li>Color select touch interface (mobile first) <b>membership</b></li>
-<li>image viewer redesign <b>implementation</b>, port fullscreen/slideshow and something like this features</li>
-<li>Big system X implementation <b>membership</b></li>
-<li>Main page flexible ui layout <b>implementation</b></li>
-</ul>
+  <section class="no-print">
 
-<h2>Recent pet-projects</h2>
+    <h2>Open-source projects</h2>
 
-<ul>
-<li><a href="http://deps-demo.invntrm.ru">simple bem deps demo service</a></li>
-<li>tool for asessors — image areas selecting — <a href="https://yadi.sk/i/cqV3DyfR3GGsHw">pic1</a>, <a href="https://yadi.sk/i/5tTr_c8X3GGsLJ">pic2</a></li>
-<li><a href="http://npmapi.invntrm.ru">«npm package name to github repo» service (+ alfred plugin)</a></li>
-<li><a href="https://github.com/a-x-/thenlog">thenlog npm package — debugging promises</a></li>
-<li><a href="https://github.com/bem-tools/atom-bem-create">bem-create plugin for Atom</a></li>
-<li>react based social service for the poets — <a href="https://yadi.sk/i/4t2A72xy3GGrsX">pic1</a>, <a href="https://yadi.sk/i/D9FvRq8X3GGrx4">pic2</a></li>
-<li><a href="http://invntrm.ru/map/">multi points map</a> — <a href="https://yadi.sk/i/Rn8Dbtlr3GGsCA">pic</a></li>
-<li><a href="https://github.com/a-x-/scian">CIAN stat crawler</a></li>
-<li><a href="https://github.com/a-x-/iphone-se-avito-crawler">Avito crawler</a> — <a href="https://yadi.sk/i/B8SQajat3GGsSL">pic</a></li>
-<li>smart home (light/music control) project — <a href="https://github.com/a-x-/tg-rpi-smart-home-bot">gh-repo</a></li>
-<li><a href="https://yadi.sk/i/85Chhoyc3GGrik">face recognition project</a></li>
-<li>simple react based game (human vs computer a car model detecting) based on ML computer vision data</li>
-</ul>
+    <ul>
+      <li>co-maintaining the <a href="https://github.com/danethurber/webpack-manifest-plugin">webpack-manifest-plugin</a></li>
+      <li><a href="https://www.npmjs.com/package/collection-deep-merge">collection-deep-merge</a> — true redux arrays merger</li>
+      <li><a href="https://www.npmjs.com/package/react-easy-print">react-easy-print</a> — advanced <kbd>ctr-p</kbd> on react</li>
+      <li><a href="https://www.npmjs.com/package/create-npm-pkg">create-npm-pkg</a> — perform all initial npm-package work</li>
+      <li><a href="https://www.npmjs.com/package/numsep">numsep</a> — ux-perfect number formatter</li>
+    </ul>
 
-<h1>edu</h1>
-<ul>
-<li><a href="https://yandexdataschool.ru">шад</a> — incomplete algorithms course</li>
-<li>coursera — incomplete «calculus one» course (курс по мат.анализу)</li>
-<li>yandex «ctf security challenge — top 100 prize</li>
-<li>saint-petersburg polytechnical university — incomplete computer science course (4 years)</li>
+  </section>
 
-<h1>research and interests</h1>
+  <section>
 
-<ul>
-<li>UX: microinteractions; proactive user interfaces</li>
-<li>UX: decreasing ui-complexity through smart suggestions — <b>IntentBox</b> project</li>
-<li>UX: start point search/launch/make interface — <b>FlexLight</b> project</li>
-<li>React/Redux architecture: HOXes (HighOrder things/compleXes); side ways cohesion pattern</li>
-<li>Client-Server interaction architecture: Data Type Driven Thin-Client (opposite to GraphQL) approach</li>
-</ul>
+    <h2>Yandex search frontend <a href="https://en.wikipedia.org/wiki/Search_engine_results_page">(SERP)</a></h2>
+
+    <ul>
+      <li>New big system X implementation <b>membership</b></li>
+      <li>Upgrading library major version <b>membership</b></li>
+      <li>Freeze IE9 code maintenance <b>initiative</b></li>
+      <li>Code structure big refactoring <b>project</b></li>
+    </ul>
+
+  </section>
+
+  <section class="no-print">
+
+    <h2>Yandex common components library — UI kit — bem, react</h2>
+
+    <ul>
+      <li>React components <b>implementation</b></li>
+      <li>Selective CI tests <b>infrastructure project</b></li>
+      <li>Port a few huge components between libraries <b>project</b></li>
+      <li>Header portal navigation redesign <b>implementation</b></li>
+      <li>Upgrading library major version <b>project</b></li>
+    </ul>
+
+  </section>
+
+  <section class="no-print">
+
+    <h2>Yandex Images (<a href="https://yandex.ru/images">yandex.ru/images</a>)</h2>
+
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Canvas</a>-based images down-scaler (mobile first) <b>implementation</b></li>
+      <li>Color select touch interface (mobile first) <b>membership</b></li>
+      <li>image viewer redesign <b>implementation</b>, port fullscreen/slideshow and something like this features</li>
+      <li>Big system X implementation <b>membership</b></li>
+      <li>Main page flexible ui layout <b>implementation</b></li>
+    </ul>
+
+  </section>
+
+  <section class="no-print">
+
+    <h2>Pet-Projects</h2>
+
+    <ul>
+      <li><a href="http://deps-demo.invntrm.ru">simple bem deps demo service</a></li>
+      <li>tool for asessors — image areas selecting — <a href="https://yadi.sk/i/cqV3DyfR3GGsHw">pic1</a>, <a href="https://yadi.sk/i/5tTr_c8X3GGsLJ">pic2</a></li>
+      <li><a href="http://npmapi.invntrm.ru">«npm package name to github repo» service (+ alfred plugin)</a></li>
+      <li><a href="https://github.com/a-x-/thenlog">thenlog npm package — debugging promises</a></li>
+      <li><a href="https://github.com/bem-tools/atom-bem-create">bem-create plugin for Atom</a></li>
+      <li>react based social service for the poets — <a href="https://yadi.sk/i/4t2A72xy3GGrsX">pic1</a>, <a href="https://yadi.sk/i/D9FvRq8X3GGrx4">pic2</a></li>
+      <li><a href="http://invntrm.ru/map/">multi points map</a> — <a href="https://yadi.sk/i/Rn8Dbtlr3GGsCA">pic</a></li>
+      <li><a href="https://github.com/a-x-/scian">CIAN stat crawler</a></li>
+      <li><a href="https://github.com/a-x-/iphone-se-avito-crawler">Avito crawler</a> — <a href="https://yadi.sk/i/B8SQajat3GGsSL">pic</a></li>
+      <li>smart home (light/music control) project — <a href="https://github.com/a-x-/tg-rpi-smart-home-bot">gh-repo</a></li>
+      <li><a href="https://yadi.sk/i/85Chhoyc3GGrik">face recognition project</a></li>
+      <li>simple react based game (human vs computer a car model detecting) based on ML computer vision data</li>
+    </ul>
+
+  </section>
+
+</section>
+
+
+<h1>Research</h1>
+
+<section class="section">
+
+  <ul>
+    <li>UX: microinteractions; proactive user interfaces</li>
+    <li>UX: decreasing ui-complexity through smart suggestions — <b>IntentBox</b> project</li>
+    <li>UX: start point search/launch/make interface — <b>FlexLight</b> project</li>
+    <li>React/Redux architecture: HOXes (HighOrder things/compleXes); side ways cohesion pattern</li>
+    <li>Client-Server interaction architecture: Data Type Driven Thin-Client (opposite to GraphQL) approach</li>
+  </ul>
+
+</section>
+
+<h1 class="no-print">Education</h1>
+
+<section class="no-print section">
+
+  <ul>
+    <li><a href="https://yandexdataschool.ru">шад</a> — incomplete algorithms course</li>
+    <li>coursera — incomplete «calculus one» course (курс по мат.анализу)</li>
+    <li>yandex «ctf security challenge — top 100 prize</li>
+    <li>saint-petersburg polytechnical university — incomplete computer science course (4 years)</li>
+  </ul>
+
+</section>
